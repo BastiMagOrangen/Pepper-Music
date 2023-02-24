@@ -8,12 +8,30 @@ namespace Pepper_Music
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            Form1 MainForm;
+
+            if (args != null && args.Length > 0)
+            {
+                List<string> t = new();
+                for (int i = 0; i < args.Length; i++)
+                {
+                    t.Add(args[i]);
+                }
+                MainForm = new Form1(t);
+            }
+            else
+            {
+                MainForm = new Form1();
+            }
+
+            Application.Run(MainForm);
+
         }
     }
 }

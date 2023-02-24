@@ -1,7 +1,4 @@
 using Pepper_Music.Model;
-using System.Diagnostics;
-using System.Drawing.Imaging;
-using System.Windows.Forms;
 
 namespace Pepper_Music
 {
@@ -10,6 +7,48 @@ namespace Pepper_Music
         WMPLib.WindowsMediaPlayer player = new();
         List<Song> songs = new();
         int count = 0;
+
+        private void openFileNow(List<string> fileName)
+        {
+            try
+            {
+                bool autoplay = false;
+                if(fileName.Count == 1) 
+                {
+                    autoplay = true;
+                }
+                foreach(var s in fileName)
+                {
+                    if (s.EndsWith(".mp3"))
+                    {
+                        //Obviously you'll do something different with an .mp3
+                        songs.Add(new Song(s, s.Replace(".mp3", "").Split(@"\").Last()));
+                        listBox1.Items.Add(s.Replace(".mp3", "").Split(@"\").Last());
+                    }
+                    else
+                    {
+                        MessageBox.Show("Can't open that file.");
+                        return;
+                    }
+                }
+                if(autoplay)
+                {
+                    Play();
+                }
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            
+        }
+
+        public Form1(List<string> fileName)
+        {
+            InitializeComponent();
+            openFileNow(fileName);
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -162,6 +201,10 @@ namespace Pepper_Music
 
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            if(listBox1.SelectedIndex > songs.Count-1 || listBox1.SelectedIndex < 0)
+            {
+                return;
+            }
             count = listBox1.SelectedIndex;
             player.URL = songs.ElementAt(count).Path;
             player.controls.pause();
@@ -182,6 +225,28 @@ namespace Pepper_Music
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Form1_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] dropped = (string[])e.Data.GetData(DataFormats.FileDrop);
+            foreach(string s in dropped)
+            {
+                if(s.EndsWith(".mp3"))
+                {
+                    songs.Add(new Song(s, s.Replace(".mp3", "").Split(@"\").Last()));
+                    listBox1.Items.Add(s.Replace(".mp3", "").Split(@"\").Last());
+                }
+                else
+                {
+                    MessageBox.Show("Der Song" + s.Replace(".mp3", "").Split(@"\").Last() + "kann nicht geladen werden", "Achtung!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+        }
+
+        private void From1_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = DragDropEffects.All;
         }
     }
 }
