@@ -1,2 +1,2 @@
-# WinMenu
-Ein Menü für Windows
+# Pepper Music
+Ein MP3 Player für Windows
