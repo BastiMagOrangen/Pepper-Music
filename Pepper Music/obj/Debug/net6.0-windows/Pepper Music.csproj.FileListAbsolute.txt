@@ -17,3 +17,22 @@ E:\Privat (echt)\WinMenu\Pepper Music\obj\Debug\net6.0-windows\refint\Pepper Mus
 E:\Privat (echt)\WinMenu\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.pdb
 E:\Privat (echt)\WinMenu\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.genruntimeconfig.cache
 E:\Privat (echt)\WinMenu\Pepper Music\obj\Debug\net6.0-windows\ref\Pepper Music.dll
+E:\Privat (echt)\Pepper-Music\Pepper Music\bin\Debug\net6.0-windows\Pepper Music.exe
+E:\Privat (echt)\Pepper-Music\Pepper Music\bin\Debug\net6.0-windows\Pepper Music.deps.json
+E:\Privat (echt)\Pepper-Music\Pepper Music\bin\Debug\net6.0-windows\Pepper Music.runtimeconfig.json
+E:\Privat (echt)\Pepper-Music\Pepper Music\bin\Debug\net6.0-windows\Pepper Music.dll
+E:\Privat (echt)\Pepper-Music\Pepper Music\bin\Debug\net6.0-windows\Pepper Music.pdb
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.csproj.AssemblyReference.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Interop.WMPLib.dll
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.csproj.ResolveComReference.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper_Music.Form1.resources
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.csproj.GenerateResource.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.GeneratedMSBuildEditorConfig.editorconfig
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.AssemblyInfoInputs.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.AssemblyInfo.cs
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.csproj.CoreCompileInputs.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.dll
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\refint\Pepper Music.dll
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.pdb
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\Pepper Music.genruntimeconfig.cache
+E:\Privat (echt)\Pepper-Music\Pepper Music\obj\Debug\net6.0-windows\ref\Pepper Music.dll
